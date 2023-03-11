@@ -8,6 +8,8 @@
 </head>
 <body>
     <form action="POST">
+        <label for="printer">Printer Name: </label>
+        <input type="printer" name="printer" id="printer">
         <label for="filee">Browse:</label>
         <input type="file" name="filee" id="file" accept=".pdf">
         <label for="copies">Copies</label>
@@ -24,7 +26,23 @@
             <option value="color">colored</option>
         </select>
 
+        <label for="size">Paper Size</label>
+        <select name="size">
+            <option value="letter">Letter</option>
+            <option value="executive">Executive</option>
+            <option value="legal">Legal</option>
+            <option value="a4">A4</option>
+
+        </select>
         
+        <label for="pages">Pages</label>
+        <select name="pages">
+            <option value="all">All</option>
+            <option value="executive">Odd</option>
+            <option value="legal">Even</option>
+            <option value="a4">Custom</option>
+        </select>
+        <input type="button" name="submit" value="Okay">
     </form>
 </body>
 </html>
