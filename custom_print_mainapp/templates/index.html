@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Print Options</title>
+</head>
+<body>
+    <form action="POST">
+        <label for="filee">Browse:</label>
+        <input type="file" name="filee" id="file" accept=".pdf">
+        <label for="copies">Copies</label>
+        <input type="text" name="copies" id="copies">
+        <label for="layout">Layout</label>
+        <select name="layout">
+            <option value="landscape">landscape</option>
+            <option value="portrait">portrait</option>
+        </select>
+
+        <label for="color">Color</label>
+        <select name="color">
+            <option value="grayscale">grayscale</option>
+            <option value="color">colored</option>
+        </select>
+
+        
+    </form>
+</body>
+</html>
