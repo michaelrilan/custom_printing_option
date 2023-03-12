@@ -1,10 +1,10 @@
 from django import forms
-from .models import reg_donor_patient,add_reqdonate, add_reqblood
+from .models import print_options
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import PasswordChangeForm, UserCreationForm
 
 
-class register(UserCreationForm):
+class print_option_form(forms.ModelForm):
     class Meta:
-        model = User
-        fields = ['username', 'email','password1','password2','first_name','last_name']
+        model = print_options
+        fields = ['print_name']

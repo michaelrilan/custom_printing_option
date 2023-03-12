@@ -7,14 +7,17 @@
     <title>Custom Print Options</title>
 </head>
 <body>
-    <form action="POST">
+    <form action="" method="POST">
         {% csrf_token %}
-        <label for="printer">Printer Name: </label>
-        <input type="printer" name="printer" id="printer">
+        <!-- <label for="printer">Printer Name: </label>
+        <input type="text" name="print_name" id="printer"> -->
+
         <label for="filee">Browse:</label>
-        <input type="file" name="filee" id="file" accept=".pdf">
+        <input type="file" name="doc_file" id="file" accept=".pdf">
+
         <label for="copies">Copies</label>
         <input type="text" name="copies" id="copies">
+
         <label for="layout">Layout</label>
         <select name="layout">
             <option value="landscape">landscape</option>
@@ -22,13 +25,13 @@
         </select>
 
         <label for="color">Color</label>
-        <select name="color">
+        <select name="colored">
             <option value="grayscale">grayscale</option>
             <option value="color">colored</option>
         </select>
 
         <label for="size">Paper Size</label>
-        <select name="size">
+        <select name="sizee">
             <option value="letter">Letter</option>
             <option value="executive">Executive</option>
             <option value="legal">Legal</option>
@@ -43,7 +46,7 @@
             <option value="legal">Even</option>
             <option value="a4">Custom</option>
         </select>
-        <input type="submit" value="Okay">
+        <button type="submit">okay</button>
     </form>
 </body>
 </html>
